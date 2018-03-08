@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Aded Link to Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added link to the javascript file -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- Added Link to personal stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Giftastic</title>
+</head>
+<body>
+    <!-- Dress for success with your title -->
+    <div class="container">
+        <div class="row">
+            <div id="buttons" class="col-12">
+                <h1>
+                    GIFS WITH A G, MOTHERFUCKER!
+                </h1>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Attempting to Input new animal buttons here, and I couldn't get the Bootstrap input form to work -->
+    <div id="buttons" class="col-12">
+        <!-- <div class="input-group input-group-sm mb-3 middle">
+                <div class="input-group-prepend">
+                          <span class="input-group-text" id="animal-input">Add an Animal!</span>
+                </div>
+                <input type="text" id="animal-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">  -->
+                <div id="animals-view"></div>
+
+                <form id="animal-form">
+                  <label for="animal-input">Add an Animal!</label>
+                  <input type="text" id="animal-input"><br>
+            
+                  <!-- Button triggers new movie to be added -->
+                  <input id="add-animal" type="submit" value="Add an Animal">
+                </form>
+                
+
+    <!-- Want the new animal buttons to be dumped here -->
+    <div class="container">
+            <div class="row">
+                <div id="animalButtons" class="col-12">
+                        <button data-animal="cat">Cat</button>
+                        <button data-animal="dog">Dog</button>
+                        <button data-animal="bird">Bird</button>
+                        <button data-animal="raccon">Trash Panda</button>
+                        
+                </div>
+            </div>
+    </div>
+
+    <!-- Gifs are dumped here -->
+    <div class="container">
+            <div class="row">
+                <div id="buttons" class="col-6">
+                    <div id="Im-a-gif-motherfucker"></div>
+                </div>
+            </div>
+
+
+                </div>
+            </div>
+    </div>
+
+</body>
+
+
+
+</html>
