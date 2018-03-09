@@ -29,14 +29,20 @@ $(document).ready(function () {
     animals.push(animal);
     //calling renderButtons because the activity did it
     renderButtons();
+    //CLear that input!
+    $("animal-input").val("");
   });
+
+
+  
   // Adding click event listen listener to all buttons
-  $("button").on("click", function() {
+  $(document).on("click", "button", function() {
     // Grabbing and storing the data-animal property value from the button
-    var animal = $(this).attr("data-animal");
+    var animal = $(this).attr("data-name");
     // Constructing a queryURL using the animal name
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
       animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+      console.log(animal)
     // Performing an AJAX request with the queryURL
     $.ajax({
       url: queryURL,
@@ -44,6 +50,7 @@ $(document).ready(function () {
     })
       // After data comes back from the request
       .then(function(response) {
+        $("#Im-a-gif-motherfucker").empty();
         console.log(queryURL);
         console.log(response);
         // storing the data from the AJAX request in the results variable
