@@ -73,10 +73,11 @@ $(document).ready(function () {
           animalDiv.append(animalImage);
           // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
           $("#Im-a-gif-motherfucker").prepend(animalDiv);
-        }
+        
 
         //please let the pausing work
         animalImage.on('click', function(){
+          console.log('click')
 
           var state = $(this).attr('data-state');
 
@@ -91,6 +92,8 @@ $(document).ready(function () {
           }
 
       });
+      //Github doesn't want to push these changes, so I'm making a more drastic change to get this curly brace pushed
+    }
 
 
       }); 

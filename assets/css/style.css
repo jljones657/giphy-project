@@ -11,3 +11,10 @@ h1{
 .middle{
     text-align: center;
 }
+
+.animalImage {
+    float: left;
+    position: relative;
+    width: 220px;
+    height: 260px;
+}
